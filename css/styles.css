@@ -1,11 +1,116 @@
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(+100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 img {
     border-radius: 50%;
-    -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 5px 5px 28px -5px #000000;
+    box-shadow: 5px 5px 28px -5px #000000;
+
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .header {
-    background-color: #1b3752;
+    height: 100vh;
+    background-image: url(/assets/img/header_cover.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
+}
+
+.header h1 {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 4px;
+    font-weight: bold;
+
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.arrow-scroll {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.arrow-scroll .fas {
+    color: #fff;
+    /* background: rgba(0, 0, 0, 0.65); */
+    border-radius: 4px;
+    padding: .5rem;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+.arrow-scroll .fas:hover {
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+}
+
+.main {
+    background-image: linear-gradient(to right top, #808080, #7e8084, #788088, #6f818a, #668388, #608588, #5c8887, #588a84, #538e87, #4e918a, #47958e, #409891);
+    position: relative;
+    color: #fff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.social a {
+    color: #fff;
+    transition: .3s;
+    -webkit-transition: .3s;
+}
+
+.social a:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.fa-github:hover {
+    color: #24292E;
+}
+
+.fa-linkedin:hover {
+    color: #00649F;
+}
+
+.fa-instagram:hover {
+    color: #C3255C;
+}
+
+.fa-facebook:hover {
+    color: #147ABE;
+}
+
+.fa-envelope:hover {
+    color: #8bfff3;
 }
