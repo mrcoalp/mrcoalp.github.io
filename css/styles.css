@@ -95,6 +95,10 @@ img {
     -webkit-transform: rotate(360deg);
 }
 
+.fa-file-pdf:hover {
+    color: #F8141E;
+}
+
 .fa-github:hover {
     color: #24292E;
 }
@@ -113,4 +117,13 @@ img {
 
 .fa-envelope:hover {
     color: #8bfff3;
+}
+
+.link {
+    color: #8bfff3;
+}
+
+.link:hover {
+    color: #5ba79f;
+    text-decoration: underline;
 }
