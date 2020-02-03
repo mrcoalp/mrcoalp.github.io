@@ -4,18 +4,18 @@ $(window).scroll(() => {
   const scrollTop = $(window).scrollTop();
 
   if (scrollTop >= 20) {
-    $(".arrow-scroll").css("display", "none");
+    $('.arrow-scroll').css('display', 'none');
   } else if (scrollTop < 20) {
-    $(".arrow-scroll").css("display", "block");
+    $('.arrow-scroll').css('display', 'block');
   }
 });
 
 function scrollToMain() {
-  $("html, body").animate(
+  $('html, body').animate(
     {
       scrollTop: $(window).height()
     },
-    "slow",
-    "swing"
+    'slow',
+    'swing'
   );
 }
